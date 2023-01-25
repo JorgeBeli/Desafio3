@@ -20,10 +20,7 @@ async function ejecutar( ) {
 
     await products.save(obj)
     await products.save(obj2)
-    await products.getAll()
-    await products.getById(1)
-    await products.deleteAll()
-    await products.deleteById(1)
+
 }
 
 ejecutar()
