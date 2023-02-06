@@ -5,19 +5,19 @@
     <title>Subir Archivo</title>
 </head>
 <body>
-    <!--  SINGLE FILE -->
-    <form action="/uploadfile" enctype="multipart/form-data" method="POST">
-        <input type="file" name="myFile" />
-        <input type="submit" value="Subir Archivo" />
-    </form>
+    <form action="/api/productos" method="post">
+        <label for="title">Nombre</label>
+        <input type="text" name="title" id="title" required>
 
-    <br>
-    <hr>
+        <label for="price">Precio</label>
+        <input type="number" name="price" id="price" required>  
+        
+        <label for="thumbnail">Thumbnail</label>
+        <input type="text" name="thumbnail" id="thumbnail" required>
 
-    <!--  MULTIPLE FILE -->
-    <form action="/uploadmultiple" enctype="multipart/form-data" method="POST">
-        Select images: <input type="file" name="myFiles" multiple/>
-        <input type="submit" value="Subir Archivos" />
+        <label for="submit">
+            <input type="submit" value="Guardar">
+        </label>
     </form>
 </body>
 </html>
